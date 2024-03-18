@@ -1,0 +1,20 @@
+An application in Python that connects to a PostgreSQL database to perform specific CRUD (Create, Read, Update, Delete) operations.
+
+Prerequisites
+    Install: Python
+                - pip install python in your terminal
+             psycopg2
+                - pip install psycopg2 in your terminal
+                - pip install psycopg2-binary (if above option does not work)
+    Downlaod: CRUD_application.py from...
+              setup.sql from...
+
+PostgreSQL Set Up
+    Login to pgAdmin 4 and create a new database with a name of your choice
+    Go to the Query tool and open the setup.sql script to run the example DDL and DLM commands
+    These commands create a "students" table and populate the table with initial sample data
+
+Compliation
+    Run the Python program using your IDE
+
+Video Demo: 
