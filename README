@@ -6,8 +6,8 @@ Prerequisites
              psycopg2
                 - pip install psycopg2 in your terminal
                 - pip install psycopg2-binary (if above option does not work)
-    Downlaod: CRUD_application.py from...
-              setup.sql from...
+    Downlaod: CRUD_application.py from my GitHub
+              setup.sql from my GitHub
 
 PostgreSQL Set Up
     Login to pgAdmin 4 and create a new database with a name of your choice
