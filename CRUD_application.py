@@ -27,7 +27,7 @@ def getAllStudents():
     cursor.execute("SELECT * FROM students")
     dataset = cursor.fetchall()
 
-    print("Displaying...")
+    print("\nDisplaying...")
     print("student_id\tfirst_name\tlast_name\temail\t\t\t\tenrollment_date")
     for data in dataset:
         print(" {}\t\t {}\t\t {}\t\t {}\t\t {}".format(data[0], data[1], data[2], data[3], data[4]))
@@ -78,12 +78,14 @@ while select != "5":
         email = input("\t New email: ")
         updateStudentEmail(id, email)
     elif select == "4":
-        print("\nEnter student's ID number: ")
+        id = input("\nEnter student's ID number: ")
         deleteStudent(id)
     elif select == "5":
         print("Have a nice day :)")
     else:
         print("Invalid option, try again")
+    
+    connection.commit()
 
 
 #closing cursor and connection
